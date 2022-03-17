@@ -26,7 +26,7 @@ export default function Editor() {
       {/* Editor Component  */}
       <h1>Editor : powered by Editor.js</h1>
     <div id='editorjs'></div>
-    <button onClick={saveData}>Save Proto</button>
+    <button onClick={saveData}>Save Text</button>
 
     {/* Editor Component  */}
     <h1>Rendered data from objects</h1>
