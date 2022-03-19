@@ -3,9 +3,9 @@ import EditorJS from '@editorjs/editorjs';
 import tools from './commonTools';
 
 export default function Saved(props) {
-  let editor;
+  
     const showSaved = ()=>{
-      editor = new EditorJS({
+      new EditorJS({
         holderId : 'loadHere',
         autofocus: true,
         data: props.data,
