@@ -4,12 +4,15 @@ import EditorConfig  from './editorConfig';
 import "./editor.css";
 import Saved from "./Saved";
 
+
 export default function Editor() {
   const [Data, setData] = useState(null);
     let editor;
+
     const launchEditor = ()=>{
         editor = new EditorJS(EditorConfig()); 
     }
+    
     const saveData = ()=>{
         editor.save().then((outputData) => {
             console.log(outputData)

@@ -1,13 +1,24 @@
+import Header from "@editorjs/header";
+
 const  config = ()=>{
     return {
         holder : 'editorjs',
-        // changes will be loggged! 
-        // onChange: (api, event) => {
-        //     console.log('Now I know that Editor\'s content changed!', event)
-        //   },
-          //Editor will be autp focused!
           autofocus: true,
+          readOnly:false,
           placeholder: 'Let`s write an awesome story!',
-          readOnly: false,
+          // tools 
+          tools:{
+            header : Header
+          },
+          // data:{
+          //   time: 1556098174501,
+          //   blocks: [
+          //     {
+          //       type: "header",
+          //       data: {
+          //         text: "Editor.js",
+          //         level: 2
+          //       }}]
+          // }
 }}
 export default config

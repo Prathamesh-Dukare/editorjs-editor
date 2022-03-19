@@ -1,13 +1,19 @@
 import React, { useEffect} from 'react'
 import EditorJS from '@editorjs/editorjs';
 
+// Config
+import Header from "@editorjs/header";
+
 export default function Saved(props) {
-  const {data} = props;
+  let editor;
     const showSaved = ()=>{
-      let editor = new EditorJS({
+      editor = new EditorJS({
         holderId : 'loadHere',
         autofocus: true,
-        data: props.data
+        data: props.data,
+        tools:{
+          header : Header
+        }
     }); 
     }
    
