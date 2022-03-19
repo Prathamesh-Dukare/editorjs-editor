@@ -32,7 +32,7 @@ export default function Editor() {
     <button onClick={saveData}>Save Text</button>
 
     {/* Editor Component  */}
-    <h1>Rendered data from objects</h1>
+    <h1>Saved data will be displayed here</h1>
     <Saved data = {Data}/>
       </>
     
