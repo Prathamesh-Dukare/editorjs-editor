@@ -1,4 +1,4 @@
-import Header from "@editorjs/header";
+import tools from "./commonTools"
 
 const  config = ()=>{
     return {
@@ -6,10 +6,8 @@ const  config = ()=>{
           autofocus: true,
           readOnly:false,
           placeholder: 'Let`s write an awesome story!',
-          // tools 
-          tools:{
-            header : Header
-          },
+          tools: tools
+         
           // data:{
           //   time: 1556098174501,
           //   blocks: [

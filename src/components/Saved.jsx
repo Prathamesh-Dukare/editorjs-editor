@@ -1,8 +1,6 @@
 import React, { useEffect} from 'react'
 import EditorJS from '@editorjs/editorjs';
-
-// Config
-import Header from "@editorjs/header";
+import tools from './commonTools';
 
 export default function Saved(props) {
   let editor;
@@ -11,9 +9,7 @@ export default function Saved(props) {
         holderId : 'loadHere',
         autofocus: true,
         data: props.data,
-        tools:{
-          header : Header
-        }
+        tools:tools
     }); 
     }
    
